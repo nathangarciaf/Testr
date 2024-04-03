@@ -20,9 +20,9 @@ button:hover {
 }
 
 input {
-    width: 180%;
+    width: 80%;
     padding: 4px 4px;
-    margin: 0 40px;
+    margin: 0 30px;
     box-sizing: border-box;
 }
 
