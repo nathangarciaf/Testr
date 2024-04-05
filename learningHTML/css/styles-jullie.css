@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Geral */
+body {
+    font-family: 'Montserrat', serif;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color : #2960c7;
+} 
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color : #2960c7;
+}
+
+p {
+    color: #979797;
+    font-size: 16px;
+}
+
+a{
+    color: #2960c7;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+header {
+    background-color: #3863b3;
+    padding: 16px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin-bottom: 0px;
+    color: #f2f2f2;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #c2c2c2;
+    margin-right: 24px;
+}
+
+nav a:hover {
+    color: #f2f2f2;
+}
+
+button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    background-color: #2960c7;
+    color: #f2f2f2;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #1e4e9b;
+}
+
+input {
+    padding: 0 24px; 
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+textarea{
+    padding: 12px 24px;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+label{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #2960c7;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.container-center-gradient {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient( 136deg,rgb(149,153,226) 0%,rgb(139,198,236) 100%);
+}
+
+.card-box{
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.24);
+}
+
+.card-box .card-title {
+    border-radius: 12px 12px 0 0;
+    padding: 20px;
+    background-color: #2960c7;
+    color: #f2f2f2;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-box .card-item {
+    height: 48px;
+    margin-bottom: 18px;
+}
+
+.card-box .card-body  {
+    padding: 30px 25px 25px 25px;
+}
+
+/* Index */
+.site-top {
+    text-align: center;
+    margin: 100px 0;
+}
+
+.site-top h1 {
+    font-size: 64;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+.courses .courses-title {
+    color: #f2f2f2;
+    background-color: #3863b3;
+    padding: 12px;
+    border-radius: 12px 12px 0 0;
+}
+
+.course {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+/* Login Page */
+.login-box {
+    max-width: 400px;
+}
+
+.login-box input {
+    width: 100%; 
+    height: 100%;
+}
+
+.login-box button {
+    width: 100%; 
+    height: 100%;
+}
+
+.login-box .register-link {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.login-box .forgot-password {
+    text-align: right;
+    margin-top: -8px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+/* Register Page */
+.register-box {
+    max-width: 400px;
+}
+
+.register-box input {
+    width: 100%; 
+    height: 100%;
+}
+
+.register-box button {
+    width: 100%; 
+    height: 100%;
+}
+
+.register-box .login-link {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+/*Course Detail*/
+.course-editor{
+    margin: 24px 0;
+    padding: 24px;
+}
+
+.course-editor input{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 12px;
+}
+
+.course-editor textarea{
+    width: 100%;
+    height: 120px;
+    margin-bottom: 16px;
+}
+
+.course-editor button{
+    width: 100%;
+}
+
+.import-students{
+    margin: 24px 0;
+    padding: 24px;
+}
+
+/*imput file css*/
+.import-students input[type="file"] {
+    display: none;
+}
+
+.import-students label {
+    display: block;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #2960c7;
+    border-radius: 12px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    line-height: 48px;
+}
+
+.import-students label:hover {
+    background-color: #6d8fce;
+    color: #f2f2f2;
+}
+
+.import-students button{
+    width: 100%;
+}
+
+.enrolled-students{
+    margin: 24px 0;
+    padding: 24px;
+}
+
+.enrolled-students table{
+    width: 100%;
+}
+
+.enrolled-students table thead {
+    background-color: #1e4e9b;
+    color: #f2f2f2;
+}
+
+.enrolled-students table th {
+    padding: 6px;
+    border-radius: 12px;
+}
+
+.enrolled-students table td {
+    background-color: #f2f2f2;
+    padding: 6px;
+    text-align: center;
+}
+
+.enrolled-students table td:nth-child(4) {
+    color: green;
+}
+
+.enrolled-students table td:nth-child(5) {
+    color: red;
+}
