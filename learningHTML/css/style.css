@@ -3,20 +3,6 @@ body {
     background-color: #3c4650;
 }
 
-button {
-    background-color: brown;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 20px;
-}
-
-button:hover {
-    background-color: lightblue;
-}
-
 input {
     width: 80%;
     padding: 4px 4px;
@@ -33,23 +19,54 @@ form {
     margin: 30px auto;
 }
 
-#container {
-    background-color: aqua;
-    border: solid;
-    display: flex
+
+header {
+    background-color: black;
+    padding: 12px 0;
+    color:white;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .courses-nav-bar {
-    font-size: 8pt;
-    text-align: center;
     background-color: black;
     color: white;
+    margin-bottom: 0%;
+    margin-top: 0%;
 }
 
 .courses-span {
     color: white;
     margin-bottom: 0%;
     margin-top: 0%;
+}
+
+.courses-top {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
+}
+
+a{
+    color: blue;
+    font-weight: 600;
+    transition: 0.3s;
 }
 
 .login-input {
@@ -63,10 +80,4 @@ form {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.container-child {
-    border: solid;
-    width: 50%;
-    color: red;
 }
