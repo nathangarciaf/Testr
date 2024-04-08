@@ -1,6 +1,29 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
 body {
     font-family: "Lucida Console", serif;
     background-color: #3c4650;
+}
+
+button {
+    transition: all .5s ease;
+    color: white;
+    border: 3px solid white;
+    font-family:"Lucida Console", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 6px;
 }
 
 input {
@@ -67,6 +90,11 @@ a{
     color: blue;
     font-weight: 600;
     transition: 0.3s;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
 }
 
 .login-input {
