@@ -13,17 +13,20 @@ body {
 
 button {
     transition: all .5s ease;
-    color: white;
-    border: 3px solid white;
     font-family:"Lucida Console", sans-serif;
     text-transform: uppercase;
     text-align: center;
     line-height: 1;
     font-size: 17px;
-    background-color : transparent;
     padding: 10px;
     outline: none;
     border-radius: 6px;
+}
+
+.button-courses {
+    color: white;
+    border: 3px solid white;
+    background-color : transparent;
 }
 
 input {
@@ -37,7 +40,7 @@ form {
     width: 50%;
     padding : 25px;
     border : 4px;
-    border-radius: 5px;
+    border-radius: 12px;
     background-color: white;
     margin: 30px auto;
 }
@@ -54,6 +57,12 @@ h1 {
     font-weight: 700;
     margin-bottom: 8px;
 }
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 8px;
+} 
 
 header .container {
     display: flex;
